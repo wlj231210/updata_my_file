@@ -1,0 +1,84 @@
+.register,
+.login {
+    width: 100%;
+    height: calc(100vh);
+    position: relative;
+    background-image: url('../../atess/image/pc_bg.jpg');
+    text-align: left;
+}
+
+.login {
+    >div {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .gologin {
+        display: block;
+        font-size: 0.2rem;
+        text-align: center;
+        a {
+            line-height: 3;
+        }
+    }
+
+    .login-form {
+        margin: auto;
+        width: 300px;
+        background-color: #96969663;
+        padding: 20px;
+    }
+
+    .login-form-forgot {
+        float: right;
+    }
+
+    .login-form-button {
+        width: 100%;
+    }
+}
+
+.login div,
+.register div {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.register {
+
+   .ant-form-item-control-input .ant-btn {
+        width: 100%;
+    }
+    // h2{font-weight: bold;}
+    >div {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        margin: auto;
+        transform: translateY(-50%);
+    }
+
+    .gologin {
+        display: block;
+        font-size: 0.2rem;
+        text-align: center;
+
+        a {
+            line-height: 3;
+        }
+
+    }
+
+    .register-form {
+        width: 350px;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px 30px;
+    }
+
+    .register-form-button {
+        width: 100%;
+    }
+}

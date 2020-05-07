@@ -1,0 +1,32 @@
+@media screen and (min-width: 415px) {
+  html {
+    font-size: 50.2px !important;
+  }
+}
+
+@media screen and (max-width: 414px) and (min-width: 376px) {
+  html {
+    font-size: 45.2px !important;
+  }
+}
+
+@media screen and (max-width: 375px)and (min-width: 300px) {
+  html {
+    font-size: 40px !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 14px/150% "微软雅黑", Verdana, Arial, Helvetica, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
