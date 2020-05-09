@@ -1,0 +1,26 @@
+
+@charset "UTF-8";
+.fy {
+	display: inline-block;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	margin: auto;
+	width: 100%;
+	margin-top: 50rpx;
+	text-align: center;
+}
+.fy ._span {
+	display: inline-block;
+	width: 80rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	margin-left: 10rpx;
+	border-radius: 50%;
+	font-size: 26rpx;
+}
+.btn-view {
+	margin-top: 20px;
+}
+

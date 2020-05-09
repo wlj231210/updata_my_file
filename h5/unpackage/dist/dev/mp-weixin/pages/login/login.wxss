@@ -1,0 +1,48 @@
+.login {
+  width: 80%;
+  margin: 50% auto;
+  padding: 20px;
+  background: #fff;
+}
+.login .uni-form-item {
+  position: relative;
+  margin-bottom: 20rpx;
+  border: 1px solid #ddd;
+  border-radius: 4rpx;
+}
+.login .uni-form-item .title {
+  line-height: 0;
+  position: absolute;
+  left: 18rpx;
+  font-size: 44rpx;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.login .uni-form-item input {
+  padding: 14rpx 14rpx 14rpx 70rpx;
+  background-color: #FFFFFF;
+  border-radius: 4rpx;
+}
+.login .uni-btn-v {
+  border-radius: 4rpx;
+}
+.login .uni-btn-v button {
+  line-height: 70rpx;
+  font-size: 26rpx;
+  height: 70rpx;
+}
+.login .select-login {
+  background-color: #FFFFFF;
+  padding: 20rpx;
+}
+.login .select-login .title1 {
+  padding-bottom: 20rpx;
+  display: block;
+}
+.login .select-login ._select {
+  font-size: 24rpx;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+

@@ -1,0 +1,401 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.iconsupplier:before {
+  content: "\e61f";
+}
+.iconcaiwuxinxi-copy:before {
+  content: "\e641";
+}
+.iconkuaisukaidian:before {
+  content: "\e6ea";
+}
+.iconicon-test1:before {
+  content: "\e620";
+}
+.icontuihuodan:before {
+  content: "\e671";
+}
+.iconshiyongbangzhu:before {
+  content: "\e62a";
+}
+.iconfq_yingfukuan:before {
+  content: "\e623";
+}
+.iconxinyongedu:before {
+  content: "\e66e";
+}
+.icontuihuodingdan:before {
+  content: "\e6b3";
+}
+.iconcaiwu:before {
+  content: "\e70e";
+}
+.iconsaomiao:before {
+  content: "\e61e";
+}
+.iconshaixuan:before {
+  content: "\e648";
+}
+.iconliuyanbeizhu:before {
+  content: "\e65a";
+}
+.icondaipingjia:before {
+  content: "\e614";
+}
+.icondaifahuo:before {
+  content: "\e615";
+}
+.icondaishouhuo:before {
+  content: "\e617";
+}
+.icondaifukuan:before {
+  content: "\e618";
+}
+.iconshouhou:before {
+  content: "\e70b";
+}
+.icondingdan:before {
+  content: "\e61d";
+}
+.iconbianji:before {
+  content: "\e627";
+}
+.icondingwei:before {
+  content: "\e613";
+}
+.iconkefu:before {
+  content: "\e622";
+}
+.iconyou:before {
+  content: "\e638";
+}
+.iconicon-test:before {
+  content: "\e61c";
+}
+.icongengduo:before {
+  content: "\e670";
+}
+.iconqingchu:before {
+  content: "\e635";
+}
+.iconfanhui:before {
+  content: "\e65c";
+}
+.iconshanchu:before {
+  content: "\e612";
+}
+.iconlaba:before {
+  content: "\ea61";
+}
+.iconxiaoxi:before {
+  content: "\e60d";
+}
+.iconsousou:before {
+  content: "\e60e";
+}
+.iconbaozhang:before {
+  content: "\e64b";
+}
+.iconnew:before {
+  content: "\e674";
+}
+.iconxinpin3:before {
+  content: "\e60f";
+}
+.iconremai:before {
+  content: "\e60c";
+}
+.iconhottubiao:before {
+  content: "\e609";
+}
+.iconjiarugouwuche:before {
+  content: "\e60a";
+}
+.iconjiarugouwuche1:before {
+  content: "\e6be";
+}
+.iconadd-fill:before {
+  content: "\e6ab";
+}
+.iconadd:before {
+  content: "\e6ac";
+}
+.iconico:before {
+  content: "\e607";
+}
+.iconbaoyou:before {
+  content: "\e656";
+}
+.iconyouhuiquan:before {
+  content: "\e64f";
+}
+.icongengduomore:before {
+  content: "\e619";
+}
+.iconzengsongjine:before {
+  content: "\e6b2";
+}
+.iconjifen:before {
+  content: "\e61b";
+}
+.iconzengpin:before {
+  content: "\e62c";
+}
+.iconzhekou:before {
+  content: "\e610";
+}
+.iconkajuan:before {
+  content: "\e611";
+}
+.iconxiugaimima:before {
+  content: "\e62b";
+}
+.iconshou:before {
+  content: "\e903";
+}
+.iconshouji:before {
+  content: "\e684";
+}
+.iconrenminbi:before {
+  content: "\e606";
+}
+.iconhaibao:before {
+  content: "\e6dc";
+}
+.iconlink:before {
+  content: "\e605";
+}
+.iconweixin:before {
+  content: "\e633";
+}
+.iconfenxiang:before {
+  content: "\e67e";
+}
+.iconyemianbucunzai:before {
+  content: "\e739";
+}
+.icondianpubucunzai:before {
+  content: "\e604";
+}
+.iconjianshezhong:before {
+  content: "\e98b";
+}
+.icondianpudayang:before {
+  content: "\e608";
+}
+.iconzanwudingdan:before {
+  content: "\e65b";
+}
+.icongeren:before {
+  content: "\e603";
+}
+.icon1:before {
+  content: "\e602";
+}
+.iconkong:before {
+  content: "\e601";
+}
+.iconjiazaizhong:before {
+  content: "\e63b";
+}
+.iconjiazaizhong1:before {
+  content: "\e616";
+}
+.iconcart:before {
+  content: "\e60b";
+}
+.iconbuju:before {
+  content: "\e61a";
+}
+.icondianpu:before {
+  content: "\e600";
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 1320979 */
+  src: url('https://at.alicdn.com/t/font_1320979_hje51enudla.eot');
+  src: url('https://at.alicdn.com/t/font_1320979_hje51enudla.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_1320979_hje51enudla.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/font_1320979_hje51enudla.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_1320979_hje51enudla.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_1320979_hje51enudla.svg#iconfont') format('svg');
+}
+.custom_text{ color:#ff547b!important;
+}
+.custom_text2{color:#FFFFFF!important;}
+.custom_btn1{ background-color:#ff547b!important;border-color:#ff547b!important;color: #ffffff!important;border-radius: 0;
+}
+.custom_btn1 > .am-badge-text{background-color:#ff547b!important; border-color: #ff547b!important;}
+.custom_btn1::before,.custom_btn2::before,.custom_btn_ghost::before{ border: 0px!important;
+}
+.custom_btn2{ background-color:#ffe6e8!important;color: #ff547b!important;border-color: #ffe6e8!important; border-radius: 0;}
+.custom_btn_ghost{ border-color:#ff547b!important;color: #ff547b!important;
+}
+.am-badge-text{color: #ff547b!important; border: 1px solid #ff547b!important;}
+.bar-tab-active{ color: #ff547b !important;border-left: 3px solid #ff547b !important;background:#f5f5f9
+}
+.am-tabs-default-bar-tab-active{ color: #ff547b!important;
+}
+.am-tabs-default-bar-underline{ border: 1px #ff547b solid!important;
+}
+.searchlist-page .searchlist-main .filter .selected{ color: #ff547b!important;
+}
+.am-modal-button-group-h .am-modal-button{ color: #ff547b!important;
+}
+.am-modal-button-group-h .am-modal-button:first-child{ color: #333!important;
+}
+.am-checkbox-inner{ border-color: #ff547b!important;background: #ff547b!important;
+}
+.am-activity-indicator-spinner{ font-family: "iconfont" !important;background-image: none;width: auto;font-size: 30px;height: auto;
+}
+.am-activity-indicator-spinner:before{ content:"\\e63b";color:#ff547b!important;
+}
+.custom_border{border:1px dashed #ff547b!important;
+}
+.border{
+	-webkit-box-shadow: 1rpx 1rpx 1rpx 1rpx #000000;
+	        box-shadow: 1rpx 1rpx 1rpx 1rpx #000000;
+}
+/* 头条小程序需要把 iconfont 样式放到组件外 */
+/*每个页面公共css */
+page {
+	min-height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 原生组件模式下需要注意组件外部样式 */
+m-input {
+	width: 100%;
+	/* min-height: 100%; */
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	background-color: #efeff4;
+	padding: 10px;
+}
+.input-group {
+	background-color: #ffffff;
+	margin-top: 20px;
+	position: relative;
+}
+.input-group::before {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #c8c7cc;
+}
+.input-group::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #c8c7cc;
+}
+.input-row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	position: relative;
+	font-size: 18px;
+	line-height: 40px;
+}
+.input-row .title {
+	width: 72px;
+	padding-left: 15px;
+}
+.input-row.border::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 8px;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #c8c7cc;
+}
+.btn-row {
+	margin-top: 25px;
+	padding: 10px;
+}
+button.primary {
+	background-color: #0faeff;
+}
+
