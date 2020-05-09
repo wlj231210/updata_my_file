@@ -10,16 +10,20 @@
 		</view>
 		<paging :total="dataList.totalRecodes" activecolor="#fff" activebackground="green" :pageSize='20' :footer="true" :current="1" @changes="dd"></paging>
 	</view>
-	<view v-else>
-		<navigator url="../login/login">去登录</navigator>
+	<view v-else class="content">
+		<view class="btn-row">
+			<button v-if="!hasLogin" type="primary" class="primary" @tap="bindLogin">登录</button>
+			<button v-if="hasLogin" type="default" @tap="bindLogout">退出登录</button>
+		</view>
 	</view>
 </template>
 
 <script>
+	import user from '../user/user'
 	import paging from '@/components/yang-paging/fy.vue'
 	export default {
 		components: {
-		       paging
+		       paging,user
 		},
 		data() {
 			return {
@@ -34,6 +38,22 @@
 			this.getFileUrl(this.filter)
 		},
 		methods: {
+			bindLogin() {
+				uni.navigateTo({
+					url: '../login/login',
+				});
+			},
+			bindLogout() {
+				this.logout();
+				/**
+				 * 如果需要强制登录跳转回登录页面
+				 */
+				if (this.forcedLogin) {
+					uni.reLaunch({
+						url: '../login/login',
+					});
+				}
+			},
 			dd(index) {
 				let filter= {pageNum:index,pageSize:this.filter.pageSize};
 				this.filter=filter;
