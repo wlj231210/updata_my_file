@@ -1,5 +1,7 @@
 {
+  "navigationBarTitleText": "",
   "usingComponents": {
-    "paging": "/components/yang-paging/fy"
+    "paging": "/components/yang-paging/fy",
+    "user": "/pages/user/user"
   }
 }

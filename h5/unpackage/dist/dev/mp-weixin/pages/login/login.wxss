@@ -1,13 +1,23 @@
 .login {
   width: 80%;
   margin: 50% auto;
-  padding: 20px;
-  background: #fff;
+}
+.login .head1 {
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 100rpx;
+  overflow: hidden;
+  width: 200rpx;
+  height: 200rpx;
+}
+.login .head1 image {
+  width: 200rpx;
+  height: 200rpx;
 }
 .login .uni-form-item {
   position: relative;
   margin-bottom: 20rpx;
-  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   border-radius: 4rpx;
 }
 .login .uni-form-item .title {
@@ -18,19 +28,25 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  color: #eeeeee;
 }
 .login .uni-form-item input {
   padding: 14rpx 14rpx 14rpx 70rpx;
-  background-color: #FFFFFF;
+  background-color: #000032;
+  color: #eeeeee;
   border-radius: 4rpx;
+  font-size: 26rpx;
 }
 .login .uni-btn-v {
-  border-radius: 4rpx;
+  margin-top: 50rpx;
 }
 .login .uni-btn-v button {
   line-height: 70rpx;
   font-size: 26rpx;
   height: 70rpx;
+  color: #FFFFFF;
+  background-color: #BB7B8B;
+  border-radius: 35rpx;
 }
 .login .select-login {
   background-color: #FFFFFF;

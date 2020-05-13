@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/m-input":1,"components/yang-paging/fy":1,"components/m-icon/m-icon":1};
+/******/ 		var cssChunks = {"components/1navBar/index":1,"components/m-input":1,"components/yang-paging/fy":1,"components/m-icon/m-icon":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/m-input":"components/m-input","components/yang-paging/fy":"components/yang-paging/fy","components/m-icon/m-icon":"components/m-icon/m-icon"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/1navBar/index":"components/1navBar/index","components/m-input":"components/m-input","components/yang-paging/fy":"components/yang-paging/fy","components/m-icon/m-icon":"components/m-icon/m-icon"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

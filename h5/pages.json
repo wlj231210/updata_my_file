@@ -9,7 +9,7 @@
 		{
 			"path": "pages/login/login",
 			"style": {
-				"navigationBarTitleText": "登录"
+				// "navigationBarTitleText": "登录"
 			}
 		}, {
 			"path": "pages/reg/reg",
@@ -30,7 +30,7 @@
 	    ,{
             "path" : "pages/index/index",
            "style": {
-           	"navigationBarTitleText": "小视频"
+           	"navigationBarTitleText": ""
            }
         }
     ],
@@ -50,9 +50,12 @@
 			"selectedIconPath": "static/img/userHL.png"
 		}]
 	},
+	
 	"globalStyle": {
-		"navigationBarTextStyle": "white",
-		"navigationBarBackgroundColor": "#0faeff",
-		"backgroundColor": "#fbf9fe"
+		"navigationBarTextStyle": "black",
+		// "navigationBarTitleText": "Template_home",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
 	}
 }

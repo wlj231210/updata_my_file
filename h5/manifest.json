@@ -1,8 +1,8 @@
 {
-    "name" : "小视频",
+    "name" : "上喵云",
     "appid" : "__UNI__A05CBA2",
-    "description" : "这是干嘛的",
-    "versionName" : "1.0.0",
+    "description" : "啥也不是",
+    "versionName" : "1.0.2",
     "versionCode" : "100",
     "transformPx" : false,
     /* 5+App特有相关 */
@@ -79,18 +79,32 @@
                         "spotlight@3x" : "unpackage/res/icons/120x120.png"
                     }
                 }
+            },
+            "splashscreen" : {
+                "android" : {
+                    "xxhdpi" : "C:/Users/Administrator/Desktop/新建文件夹/88.png",
+                    "xhdpi" : "C:/Users/Administrator/Desktop/新建文件夹/88.png",
+                    "hdpi" : "C:/Users/Administrator/Desktop/新建文件夹/88.png"
+                }
             }
+        },
+        "splashscreen" : {
+            "waiting" : true
         }
     },
     /* 快应用特有相关 */
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wxb911001c751a8cd0",
         "setting" : {
-            "urlCheck" : false
+            "urlCheck" : false,
+            "es6" : true,
+            "postcss" : false,
+            "minified" : true
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "permission" : {}
     },
     "mp-alipay" : {
         "usingComponents" : true
@@ -102,7 +116,7 @@
         "usingComponents" : true
     },
     "h5" : {
-        "title" : "小视频",
+        "title" : "上喵云",
         "domain" : "h5.wanglijian.top"
     }
 }

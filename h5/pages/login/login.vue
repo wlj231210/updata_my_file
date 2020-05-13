@@ -1,19 +1,21 @@
 <template>
-	<view style="width:100%;background-color: #EFEFF4;">
+	<view style="width:100%;background-color: #000032;">
+		<nav-bar type="transparent"></nav-bar>
 		<view class="login">
-			<form @submit="formSubmit" >
+			<view class="head1">
+				<image src="../../static/img/longmao.png" mode=""></image>
+			</view>
+			<form @submit="formSubmit">
 				<view class="uni-form-item uni-column">
-					<text class="custom_text title iconfont iconshou"></text>
-					<input type="text" value=""  name="account" placeholder="请输入帐号"
-						 placeholder-style="color:#ddd" />
+					<text class="title iconfont iconshou"></text>
+					<input type="text" value="" name="account" placeholder="请输入帐号" placeholder-style="color:#ddd" />
 				</view>
 				<view class="uni-form-item uni-column">
-					<text class="custom_text title iconfont iconxiugaimima"></text>
-					<view><input type="password" value="" name="password" placeholder="请输入密码"
-						 placeholder-style="color:#ddd" /></view>
+					<text class="title iconfont iconxiugaimima"></text>
+					<view><input type="password" value="" name="password" placeholder="请输入密码" placeholder-style="color:#ddd" /></view>
 				</view>
 				<view class="uni-btn-v">
-					<button form-type="submit" class="custom_btn1">登录</button>
+					<button form-type="submit" class="">登录</button>
 				</view>
 			</form>
 		</view>
@@ -25,7 +27,7 @@
 
 <script>
 	export default {
-		props:{
+		props: {
 			getUserInfo: {
 				type: [Boolean],
 				default: function() {
@@ -36,11 +38,11 @@
 		data() {
 			return {
 				// getUserInfo:false，
-				usersetcop:true,
-				index:0,
-				userinfo:{},
-				company_list:[],
-				company_name:[]
+				usersetcop: true,
+				index: 0,
+				userinfo: {},
+				company_list: [],
+				company_name: []
 			};
 		},
 		methods: {
@@ -58,32 +60,35 @@
 					}
 				});
 			},
-			async formSubmit(e){
+			async formSubmit(e) {
 				console.log(e)
 				uni.showLoading({
 					title: '正在登录'
 				});
 				let data = e.detail.value;
 				// try{
-					let res =await this.$api.login(data);
-					console.log(res)
-					if(res.code ===200) {
-						uni.setStorage({key:'token',data: res.dataMap.token});
-						uni.navigateTo({
-							url:'/pages/index/index'
-						})
-						// this.$store.dispatch('change', res.data);
-						// this.$emit('ming',true);
-						uni.hideLoading();
-					}else{
-						uni.hideLoading();
-						uni.showToast({
-							title: res.message,
-							mask: false,
-							icon:'none',
-							duration: 1500
-						});
-					}
+				let res = await this.$api.login(data);
+				console.log(res)
+				if (res.code === 200) {
+					uni.setStorage({
+						key: 'token',
+						data: res.dataMap.token
+					});
+					uni.switchTab({
+						url: '/pages/index/index'
+					})
+					// this.$store.dispatch('change', res.data);
+					// this.$emit('ming',true);
+					uni.hideLoading();
+				} else {
+					uni.hideLoading();
+					uni.showToast({
+						title: res.message,
+						mask: false,
+						icon: 'none',
+						duration: 1500
+					});
+				}
 				// }catch(e){
 				// 	uni.hideLoading();
 				// 	uni.showToast({
@@ -113,7 +118,7 @@
 							// This.getUserInfo = true;
 							// uni.setStorageSync('userInfo', infoRes.userInfo);
 							This.$store.dispatch('change', infoRes.userInfo);
-							This.$emit('ming',true)
+							This.$emit('ming', true)
 							uni.hideLoading();
 							try {
 								uni.setStorageSync('isCanUse', false); //记录是否第一次授权  false:表示不是第一次授权
@@ -124,62 +129,85 @@
 					});
 				} catch (e) {}
 			}
-		
+
 		}
 	}
 </script>
 
 <style lang="less">
+	.login {
+		width: 80%;
+		// margin-top: 50%;
+		margin: 50% auto;
 
-		.login{
-			width: 80%;
-			// margin-top: 50%;
-			margin: 50% auto;
-			padding: 20px;
-			background: #fff;
+		// padding: 20px;
+		.head1 {
+			border-radius: 50%;
+			margin: auto;
+			margin-bottom: 100upx;
+			overflow: hidden;
+			width: 200upx;
+			height: 200upx;
 
-				.uni-form-item{
-					position: relative;
-					margin-bottom: 20upx;
-					border: 1px solid #ddd;
-					border-radius: 4upx;
-					.title{
-						line-height: 0;
-						position: absolute;
-						left: 18rpx;
-						font-size: 44rpx;
-						top: 50%;
-						transform: translateY(-50%);
-					}
-					input{
-						padding:14upx 14upx 14upx 70upx;
-						background-color: #FFFFFF;
-						border-radius: 4upx;
-					}
-				}
-			
-			
-				.uni-btn-v{
-					border-radius: 4upx;
-					button{
-						line-height: 70upx;
-						font-size: 26upx;
-						height: 70upx;
-					}
-			}
-			.select-login{
-				background-color:  #FFFFFF;
-				padding:20upx;
-				.title1{
-					padding-bottom: 20upx;
-					display: block;
-				}
-				select{
-						font-size: 24upx;
-						border: 1px solid #ddd;
-						padding: 5px;
-
-				}
+			image {
+				width: 200upx;
+				height: 200upx;
 			}
 		}
+
+		.uni-form-item {
+			position: relative;
+			margin-bottom: 20upx;
+			border-bottom: 1px solid #ddd;
+			border-radius: 4upx;
+
+			.title {
+				line-height: 0;
+				position: absolute;
+				left: 18rpx;
+				font-size: 44rpx;
+				top: 50%;
+				transform: translateY(-50%);
+				color: #eeeeee;
+			}
+
+			input {
+				padding: 14upx 14upx 14upx 70upx;
+				background-color: #000032;
+				color: #eeeeee;
+				border-radius: 4upx;
+				font-size: 26upx;
+			}
+		}
+
+		.uni-btn-v {
+			margin-top: 50upx;
+
+			button {
+				line-height: 70upx;
+				font-size: 26upx;
+				height: 70upx;
+				color: #FFFFFF;
+				background-color: #BB7B8B;
+				border-radius: 35upx;
+			}
+		}
+
+		.select-login {
+			background-color: #FFFFFF;
+			padding: 20upx;
+
+			.title1 {
+				padding-bottom: 20upx;
+				display: block;
+			}
+
+			select {
+				font-size: 24upx;
+				border: 1px solid #ddd;
+				padding: 5px;
+
+			}
+		}
+	}
 </style>

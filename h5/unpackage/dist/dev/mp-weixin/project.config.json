@@ -4,12 +4,15 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false
+		"urlCheck": false,
+		"es6": true,
+		"postcss": false,
+		"minified": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.2",
-	"appid": "touristappid",
-	"projectname": "%E5%B0%8F%E8%A7%86%E9%A2%91",
+	"appid": "wxb911001c751a8cd0",
+	"projectname": "%E4%B8%8A%E5%96%B5%E4%BA%91",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
