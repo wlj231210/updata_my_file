@@ -28,7 +28,6 @@ export default class Login extends React.Component {
         // console.log(cookie.load('ar').redirectUri)
         if (res.code === 200) {
             message.success('登录成功');
-            cookie.save('token', res.dataMap.token)
             window.location.href = '/index'
         }else{
             message.error(res.message);
@@ -47,7 +46,7 @@ export default class Login extends React.Component {
                             <Form className="login-form" onFinish={this.login} name="normal_login" initialValues={{ remember: true }}>
                                 <h2 className="text-left">登录</h2>
                                 <Form.Item
-                                    name="account"
+                                    name="username"
                                     rules={[{ required: true, message: '请输入帐号' }]}
                                 >
                                     <Input

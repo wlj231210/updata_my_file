@@ -5,9 +5,16 @@ import cookie from 'react-cookies'
 export default {
   //用户登陆
   async login(params){
-    return await instance.post(`${base}/v2/v3/user/login`,params).then((res)=>{
+    return await instance.post(`${base}/login`,params).then((res)=>{
       return res.data;
     }).catch((error)=>{
+      message.error('服务器出错');
+    });
+  },
+  async getuserinfo(){
+    return await instance.get(`${base}/getuserinfo`).then((res) => {
+      return res.data;
+    }).catch((error) => {
       message.error('服务器出错');
     });
   },
@@ -35,9 +42,17 @@ export default {
   },
   //用户注册
   async register(params){
-    return  await instance.post(`${base}/user/register`,params).then((res)=>{
+    return await instance.post(`${base}/regest`,params).then((res)=>{
       return res.data;
     }).catch((error)=>{
+      //message.error('服务器出错')
+    });
+  },
+//用户退出
+  async logout(){
+    return await instance.get(`${base}/logout`).then((res) => {
+      return res.data;
+    }).catch((error) => {
       //message.error('服务器出错')
     });
   },

@@ -1,3 +1,3 @@
 module.exports = {
-    base: "https://www.wanglijian.top"
+    base: "/v1"
 };

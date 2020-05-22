@@ -101,17 +101,17 @@ module.exports = function(proxy, allowedHost) {
     },
     public: allowedHost,
     // `proxy` is run between `before` and `after` `webpack-dev-server` hooks
-    // proxy:{
-    //   "/v1":{
-    //     // "target":"http://192.168.0.117:10001",
-    //     "target": "http://39.106.169.254:10002",
-    //     "changeOrigin":true,
-    //     pathRewrite:{
-    //       '^/v1':''
-    //     }
-    //   }
-    // },
-    proxy,
+    proxy:{
+      "/v1":{
+        // "target":"http://192.168.0.117:10001",
+        "target": "http://api.wanglijian.top:10000",
+        "changeOrigin":true,
+        pathRewrite:{
+          '^/v1':''
+        }
+      }
+    },
+    // proxy,
     before(app, server) {
       // Keep `evalSourceMapMiddleware` and `errorOverlayMiddleware`
       // middlewares before `redirectServedPath` otherwise will not have any effect
