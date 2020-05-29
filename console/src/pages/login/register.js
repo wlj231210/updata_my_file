@@ -17,7 +17,7 @@ export default class Register extends React.Component {
         isagree: false
     }
     componentWillMount = () => {
-        document.title = "注册 - GID账号"
+        document.title = "注册"
     }
 
     register = async values => {
@@ -90,7 +90,7 @@ export default class Register extends React.Component {
                                 scrollToFirstError
                             >
 
-                                <h2 className="text-left">注册 - GID账号</h2>
+                                <h2 className="text-left">注册</h2>
                                 <Form.Item
                                     name="mobile"
                                     rules={[{ required: true, message: '请输入你的手机号' }, {

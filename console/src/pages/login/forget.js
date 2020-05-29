@@ -17,7 +17,7 @@ export default class Forget extends React.Component {
         isagree: false
     }
     componentWillMount = () => {
-        document.title = "注册 - GID账号"
+        document.title = "修改"
     }
 
     register = async values => {

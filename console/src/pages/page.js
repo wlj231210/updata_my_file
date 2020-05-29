@@ -8,6 +8,7 @@ import Index from './index';
 import Forget from './login/forget';
 import Empower from './index/empower';
 import MList from './index/list';
+import Footer from '../components/footer';
 // test
 import PicturesWall from '../components/upload'
 class Pages extends React.Component {
@@ -34,6 +35,7 @@ class Pages extends React.Component {
 
                     <Redirect to={`/login`} />
                 </Switch>
+                <Footer></Footer>
             </div>
         );
     }

@@ -23,17 +23,19 @@ export default class Login extends React.Component {
 
     login = async values => {
         this.setState({ loading: true });
-        values = Object.assign(values);
-        let res = await api.login(values);
-        // console.log(cookie.load('ar').redirectUri)
-        if (res.code === 200) {
-            message.success('登录成功');
-            window.location.href = '/index'
-        }else{
-            message.error(res.message);
-
+        try {
+            values = Object.assign(values);
+            let res = await api.login(values);
+            if (res.code === 200) {
+                message.success('登录成功');
+                window.location.href = '/index'
+            } else {
+                message.error(res.message);
+            }
+        } catch (error) {
+            message.error('网络出错');
         }
-        this.setState({ loading: false })
+        this.setState({ loading: false });
     };
 
 
@@ -71,7 +73,7 @@ export default class Login extends React.Component {
                                 <Form.Item className="mb-0">
                                     <Button type="primary" htmlType="submit" className="login-form-button">登录</Button>
                                 </Form.Item>
-                                {/* <span className="gologin"><a href="/register">没有帐号?去注册</a></span> */}
+                                <span className="gologin"><a href="/register">没有帐号?去注册</a></span>
                             </Form>
                         </Col>
                     </Row>
