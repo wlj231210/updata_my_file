@@ -17,9 +17,7 @@ export default class Login extends React.Component {
         }
     }
 
-    componentWillMount = () => {
-        document.title = "登录";
-    }
+
 
     login = async values => {
         this.setState({ loading: true });

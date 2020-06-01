@@ -28,6 +28,7 @@ class Pages extends React.Component {
                     <Route path="/index" component={Index} />
                     <Route path="/login" component={Login} />
                     <Route path="/reset" component={Forget} />
+                    <Route path="/register" component={Register} />
                     <Route path="/index/empower" exact component={Empower} />
                     <Route path="/index/list" component={MList} />
                     {/* test */}
