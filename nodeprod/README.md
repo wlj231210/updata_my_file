@@ -1,4 +1,6 @@
-一.全局安装node ,express,mysql等
+项目启动 npm start   http://localhost:10000
+
+一.全局安装node ,express,mysql,hotnode等
 
 
 二.全局安装 hotnode  //作用热更新

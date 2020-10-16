@@ -10,6 +10,10 @@ var indexRouter = require('./routes/index');
 var user = require('./routes/api/user');
 
 var app = express();
+
+
+// app.listen(4000,()=>{console.log(1)})
+
 //设置跨域访问
 app.all("*",function(req,res,next){
     //设置允许跨域的域名，*代表允许任意域名跨域
