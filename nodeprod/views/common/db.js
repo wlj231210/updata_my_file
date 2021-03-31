@@ -1,5 +1,6 @@
 // 导入模块
 var mysql = require('mysql');
+
 // 导入配置文件
 const configObj = require(process.cwd() + "/common/config.json").db_config
 

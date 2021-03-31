@@ -1,0 +1,181 @@
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+    border-radius: 0;
+}
+
+
+
+//实名认证模块页面样式  geedev\src\pages\personal\authentication.js
+.auth_uploadButton {
+    width: 210px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 32px;
+    color: #999;
+}
+
+.authentication {
+    .auth_container {
+        min-width: 1000px;
+
+        .auth_content {
+
+            .auth_row {
+                margin-top: 30px;
+
+                .auth_title {
+                    font-weight: 600;
+                    text-align: right;
+                    margin-right: 20px;
+                    min-width: 130px;
+                }
+            }
+
+            .person_auth {
+                margin-top: 40px;
+                width: 100%;
+
+                .personAuth_title {
+                    border-bottom: 1px solid #e8e8e8;
+                    font-size: 16px;
+                }
+
+                .personAuth_body {
+                    .auth_row {
+                        margin-top: 30px;
+
+                        .auth_title {
+                            font-weight: 600;
+                            text-align: right;
+                            margin-right: 20px;
+                            min-width: 130px;
+                            padding-top: 3px;
+                        }
+
+                        .picshow {
+                            position: relative;
+
+                            &:hover {
+                                .deleteMask {
+                                    display: block;
+                                }
+                            }
+
+                            .deleteMask {
+                                display: none;
+                                background-color: rgba(0, 0, 0, .5);
+                                width: 210px;
+                                height: 150px;
+                                position: absolute;
+                                z-index: 999;
+                                top: 0;
+                                left: 0;
+                                color: #fff;
+                                font-size: 24px;
+                                text-align: center;
+                                line-height: 150px;
+                                cursor: default;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .company_auth {
+                margin-top: 40px;
+                width: 100%;
+
+                .companyAuth_title {
+                    border-bottom: 1px solid #e8e8e8;
+                    font-size: 16px;
+                }
+
+                .companyAuth_body {
+                    .auth_row {
+                        margin-top: 30px;
+
+                        .auth_title {
+                            font-weight: 600;
+                            text-align: right;
+                            margin-right: 20px;
+                            min-width: 130px;
+                            padding-top: 3px;
+                        }
+                    }
+
+                    .picshow {
+                        position: relative;
+
+                        &:hover {
+                            .deleteMask {
+                                display: block;
+                            }
+                        }
+
+                        .deleteMask {
+                            display: none;
+                            background-color: rgba(0, 0, 0, .5);
+                            width: 210px;
+                            height: 150px;
+                            position: absolute;
+                            z-index: 999;
+                            top: 0;
+                            left: 0;
+                            color: #fff;
+                            font-size: 24px;
+                            text-align: center;
+                            line-height: 150px;
+                            cursor: default;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//基本资料页面样式 src\pages\personal\basic_information.js
+.basic_information {
+    .container {
+        min-width: 1000px;
+    }
+}
+
+.access_key {background-color: #fff;
+    .ant-input-group-addon{
+        padding: 0;
+        border: 0;
+    }
+}
+
+.status {
+    .success {
+        color: #2CB663;
+
+        span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #2CB663;
+        }
+    }
+
+    .disabled {
+        color: #999;
+
+        span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #999;
+        }
+    }
+}

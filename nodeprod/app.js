@@ -6,12 +6,13 @@ var session = require('express-session');
 // var FileStore = require('session-file-store')(session);
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var user = require('./routes/api/user');
+// var indexRouter = require('./routes/index');
+var user = require('./routes/web/user/user');
+var friend = require('./routes/web/user/friends');
+var file = require('./routes/admin/file_operation/file');
+
 
 var app = express();
-
-
 // app.listen(4000,()=>{console.log(1)})
 
 //设置跨域访问
@@ -33,7 +34,7 @@ app.use(session({
   resave: true,
   saveUninitialized: false,
   cookie: {
-    maxAge: 1000 * 60 * 10 //过期时间设置(单位毫秒)
+    maxAge: 1000 * 60 * 48 //过期时间设置(单位毫秒)
   }
 }));
 
@@ -41,26 +42,28 @@ app.use(session({
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(logger('dev'));
 
 
 //apirouter
-app.use(indexRouter);
-app.use(user);
+// app.use(indexRouter);
+app.use('/user',user);
+// app.use('/friend',friend);
+// app.use('/file',file);
 
 //log
 var log4js = require("./log");
 app.use(log4js.useLog());
 
-// catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//   log4js.useLog(createError(404))
-//   next(createError(404));
-// });
+// // catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  log4js.useLog(createError(404))
+  next(createError(404));
+});
 
 // error handler
 app.use(function(err, req, res, next) {

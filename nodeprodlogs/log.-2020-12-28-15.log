@@ -1,0 +1,2 @@
+[2020-12-28T15:41:33.551] [INFO] app - ::ffff:10.168.1.120 - - "GET / HTTP/1.1" 404 1147 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+[2020-12-28T15:41:33.676] [INFO] app - ::ffff:10.168.1.120 - - "GET /favicon.ico HTTP/1.1" 404 1147 "http://10.168.1.120:10000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"

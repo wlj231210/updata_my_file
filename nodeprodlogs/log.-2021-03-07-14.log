@@ -1,0 +1,4 @@
+[2021-03-07T14:32:44.588] [INFO] app - ::1 - - "GET / HTTP/1.1" 404 1147 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36"
+[2021-03-07T14:32:44.772] [INFO] app - ::1 - - "GET /favicon.ico HTTP/1.1" 404 1147 "http://localhost:10000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36"
+[2021-03-07T14:32:51.627] [INFO] app - ::1 - - "GET /apidoc/vendor/bootstrap.min.css.map HTTP/1.1" 404 1147 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36"
+[2021-03-07T14:32:56.576] [INFO] app - ::1 - - "GET /apidoc/vendor/bootstrap.min.css.map HTTP/1.1" 404 1147 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36"

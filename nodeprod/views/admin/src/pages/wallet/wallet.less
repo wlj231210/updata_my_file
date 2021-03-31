@@ -1,0 +1,60 @@
+@import '~antd/dist/antd.css';
+@import '../common.less';
+//tableheader样式
+.ant-table-thead>tr>th{
+    height:40px;
+    padding-top:0;
+    padding-bottom: 0;
+    border-right: 1px solid #fff;
+    border-bottom: none;
+    background-color: #F5F5F5;
+}
+
+//钱包-余额页面样式   src\pages\wallet\balance.js
+.balance{
+    .balance_container{    
+        min-width: 1000px;
+        .balance_content{   
+
+            .account_overview{  
+                margin-bottom:40px;
+                .account_header{
+                    font-size: 20px;
+                    display: flex;
+                    margin-bottom: 20px;
+                    .account_money{
+                        color:#3296fa;
+                        margin-left: 10px;
+                    }
+                }
+                .account_frozen{   
+                    font-size: 14px;
+                    position: relative;
+                    padding:15px;
+                    border-right: 1px solid #e8e8e8;
+                    .frozen_button{
+                        position: absolute;
+                        right:30px;
+                        top:35px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                }
+                .account_coupon{  
+                    font-size: 14px;
+                    padding-left: 20px;
+                    position: relative;
+                    padding:15px;
+                    .coupon_button{
+                        position: absolute;
+                        right:30px;
+                        top:35px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

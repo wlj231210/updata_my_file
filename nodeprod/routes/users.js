@@ -8,7 +8,7 @@ var mysql = require("mysql");
 
 //引入文件
 
-var dbConfig = require('./database/DBConfig');
+var dbConfig = require('./database/dbConfig');
 
 var querySql = require('./database/querysql');
 

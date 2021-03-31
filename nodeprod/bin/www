@@ -3,6 +3,11 @@
 /**
  * Module dependencies.
  */
+//websocket
+var websoc1 =require('../websocket/scoket1');
+var websoc2 =require('../websocket/scoket2');
+websoc1();
+websoc2();
 
 var app = require('../app');
 var debug = require('debug')('nodeprod:server');

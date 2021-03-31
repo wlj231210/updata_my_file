@@ -4,5 +4,21 @@
         "docs": "md",
         "i18n": "json",
 
-    }
+    },
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "a",
+            "database": "aaa",
+            "username": "root",
+            "password": "123123"
+        }
+    ],
+    "git.ignoreLimitWarning": true
 }

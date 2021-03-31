@@ -1,0 +1,1 @@
+[2020-12-24T15:04:32.326] [INFO] app - ::ffff:10.168.1.120 - - "GET /apidoc/vendor/bootstrap.min.css.map HTTP/1.1" 404 1147 "" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"

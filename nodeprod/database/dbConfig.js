@@ -29,7 +29,7 @@ db.connection = function () {
         host: '127.0.0.1',
         user: 'root',
         password: 'wlj0818.',
-        database: 'php_a',
+        database: 'wlj_node',
         post: 3306
     });
     //数据库连接

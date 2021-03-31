@@ -1,0 +1,4 @@
+[2020-12-24T18:12:46.144] [INFO] app - ::ffff:10.168.1.120 - - "GET /apidoc/vendor/bootstrap.min.css.map HTTP/1.1" 404 1147 "" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+[2020-12-24T18:19:40.727] [INFO] app - ::ffff:10.168.1.120 - - "GET /apidoc/vendor/bootstrap.min.css.map HTTP/1.1" 404 1147 "" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+[2020-12-24T18:51:22.124] [INFO] app - ::ffff:10.168.1.120 - - "GET /apidoc/vendor/bootstrap.min.css.map HTTP/1.1" 404 1147 "" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+[2020-12-24T18:52:01.466] [INFO] app - ::ffff:10.168.1.120 - - "GET /apidoc/vendor/bootstrap.min.css.map HTTP/1.1" 404 1147 "" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
