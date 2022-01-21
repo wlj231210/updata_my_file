@@ -15,7 +15,7 @@
     "hotnode": "^0.0.8",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "log4js": "^6.2.1",
+    "log4js": "^6.4.0",
     "morgan": "~1.9.1",
     "mysql": "^2.18.1",
     "nodejs-websocket": "^1.7.2",
